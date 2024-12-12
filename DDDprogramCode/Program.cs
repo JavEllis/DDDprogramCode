@@ -18,3 +18,21 @@ class Program
         Console.WriteLine("2. Personal Supervisor (PS)");
         Console.WriteLine("3. Senior Tutor (ST)");
         string role = Console.ReadLine();
+
+        switch (role)
+        {
+            //calls functions based on the role they have selected 
+            case "1":
+                StudentInteraction();
+                break;
+            case "2":
+                PSInteraction();
+                break;
+            case "3":
+                STInteraction();
+                break;
+            default:
+                Console.WriteLine("Invalid role, Please select the correct role.");
+                break;
+        }
+    }
